@@ -1,0 +1,456 @@
+.page {
+  min-width: 1100px;
+  /* мы ещё не умеем делать мобильную версию сайта, */
+  /* поэтому выше установлена минимальная ширина страницы */
+  max-width: 1600px;
+  /* выше установили ограничение по максимальной ширине */
+  margin: 0 auto;
+  /* выше для экранов больше 1600px отцентрировали весь контент */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  border:1px solid orange;
+}
+
+.header {
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 64px;
+  color: #000000;
+  position: relative;
+  border:1px solid yellow;
+  /* выше установили ограничения для секции */
+}
+/* ниже выяснить почему не тянется логотип */
+.logo__place_header{
+  position: absolute;
+  left: 64px;
+  top: 30px;
+  height: 32px;
+  width: 183px;
+  z-index: 5;
+  border:1px solid red;
+}
+/* ниже выяснить почему заголовок не центрируется */
+/* ниже проверить правильность написания полужирности font-weight: 700 ?? */
+.header__title{
+  display: flex;
+  left: 64px;
+  line-height: 96px;
+  width: 730px;
+  font-size: 102px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: left;
+  z-index: 4;
+  border:1px solid red;
+}
+
+/* выяснить почему текст не растягивается как в макете */
+.header__subtitle{
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+  line-height: 25px;
+  width: 388px;
+  font-size: 18px; 
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+  z-index: 3;
+  border:1px solid red;
+}
+
+.header__link{
+  text-decoration: none;
+  color: #2f80ed;
+}
+/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.header__square-pic {
+  position: absolute;
+  right: 0px;
+  top: 64px;
+  height: 568px;
+  width: 568px;
+  background-color: #2f80ed;
+  z-index: 1;
+}
+
+.header__main-illustration{
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  height: 608px;
+  width: 765px;
+  z-index: 2;
+  border:1px solid red;
+}
+
+.content{
+  border:1px solid yellow;
+}
+/* ниже разобраться с отступами,  что там должно быть flex,  padding или margin */
+.description{
+  display: flex;
+  position: relative;
+  border:1px solid green;
+}
+
+.description__two-columns{ 
+  width: 80%;
+  padding-top: 100px;
+  margin: auto;
+  border:1px solid purple;
+}
+
+.description__two-columns_all{
+  display: flex;
+  box-sizing: content-box;
+  width: 100%;
+  padding: 0;
+  justify-content: space-between;
+  border:1px solid peru;
+}
+
+.description__two-columns_brif{
+  width: 175px;
+  border:1px solid green;
+  
+}
+
+.description__title{
+  line-height: 1.2;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 0px;
+  border:1px solid purple;
+}
+
+.description__link{
+  text-decoration: none;
+  color: #2f80ed;
+}
+
+.description__two-columns_main-text{
+  width: 80%;
+  min-width: 784px;
+  border:1px solid green;
+}
+
+.description__paragraf{
+  font-size: 24px;
+  line-height: 34px;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0px;
+  border:1px solid purple;
+}
+
+.description__span-accent{
+  font-size: 24px;
+  line-height: 34px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.paragraf_block_first{
+  padding-bottom: 30px;
+  border:1px solid yellow;
+}
+
+.paragraf_block_second{
+  padding-bottom: 30px;
+  border:1px solid yellow;
+}
+
+.paragraf_block_third{
+  padding: 0px;
+  border:1px solid yellow;
+}
+
+.digits{
+  margin: 0;
+  padding-top: 100px;
+  padding-bottom: 110px;
+  border:1px solid green;
+}
+
+.section__title_all{
+  width: 60%;
+  padding: 0px;
+  margin: auto;
+  border:1px solid purple;
+}
+
+.section__title{
+  text-align: center;
+  line-height: 1.15;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  border:1px solid red;
+}
+
+.section__subtitle{
+  text-align: center;
+  line-height: 34px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: normal;
+  margin-bottom: 0px;
+  border:1px solid red;
+}
+
+.table{
+  display: flex;
+  flex-wrap: wrap;
+  width: 1100px;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  justify-content: space-between;
+  border:1px solid purple;
+}
+
+.table__cell{
+  list-style: none;
+  border:1px solid red;
+}
+
+.table__cell_theme_white{
+  margin: 60px 0 0;
+  width: 250px;
+}
+
+.table__heading{
+  font-size: 24px;
+  line-height: 1.15;
+  font-style: normal;
+  font-weight: 700;
+  margin: 0;
+  border:1px solid green;
+}
+
+.table__text{
+  font-size: 18px;
+  line-height: 1.2;
+  font-style: normal;
+  font-weight: normal;
+  margin: 20px 0 0;
+  border:1px solid green;
+}
+
+.table__heading_theme_white{
+  color: #000000;
+}
+
+.table__text_theme_white{
+  color: #000000;
+}
+
+.feynman{
+  background-color: #f2f2f2;
+  background-image: url(../images/feynman.png);
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: bottom;
+  margin: 0;
+  height: 890px;
+  padding-top: 100px;
+  padding-bottom: 0;
+  position: relative;
+  border:1px solid green; 
+}
+
+.feynman__illustration{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  width: 867px;
+  height: 637px;
+  border:1px solid red;
+}
+
+.feynman__title{
+  margin: auto;
+  text-align: center;
+  width: 648px;
+  font-size: 120px;
+  line-height: 1.15;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  border:1px solid red;
+}
+
+.feynman__subtitle{
+  margin: auto;
+  text-align: center;
+  font-size: 36px;
+  line-height: 51px;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 70px;
+  padding-right: 0px;
+  border:1px solid red;
+  
+}
+
+.feynman__link{
+  position: absolute;
+  right: 48px;
+  top: 50%;
+  font-size: 36px;
+  line-height: 61px;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  color: #2f80ed;
+  border:1px solid red;
+}
+/* почему иллюстрация находит на заголовок? */
+
+
+.kaufman{
+  margin: 0;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #1f1f1f;
+  border:1px solid green;
+  position: relative;
+  overflow: hidden;
+}
+/* почему треугольник находит на заголовок? */
+/* что-то с границами фигуры */
+.kaufman__triangle{
+  background-image: url(../images/kaufman-triangle.svg);
+  position: absolute;
+  right: -210px;
+  top: 0px;
+  height: 877px;
+  width: 877px;
+  border:1px solid red;
+}
+
+.section__title_theme_dark{
+  color: #ffffff;  
+}
+.section__subtitle_theme_dark{
+  color: #ffffff; 
+}
+
+.table__heading_theme_dark{
+  color: #ffffff;
+}
+
+.table__text_theme_dark{
+  color: #ffffff;
+}
+
+/* и элемента с модификатором вида ключ-значение */
+.table__cell_theme_dark {
+  width: 200px; 
+  margin-right: 0;
+  margin-top: 80px;
+  z-index: 2;
+}
+
+.footer{
+  background-color: #1f1f1f;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  border:1px solid yellow;
+}
+
+.footer__columns{
+  display: flex; /* разместить элименты по центру вертикали,  и растянуть по горизонтали максимально*/
+  flex-direction: row;
+  margin: auto;
+  width: 90%;
+  justify-content: space-between; /* растянуть по горизонтали с отступами между элиментов */
+  align-items: stretch; /* растянуть элементы по вертикали */
+  min-height: 350px;
+  border:1px solid green;
+}
+
+.footer__column_content_copyright{
+  position: relative;
+  padding: 0;
+  flex-basis: 711px;
+  border:1px solid red;
+}
+
+.logo__place_footer{
+  height: 35px;
+  width: 183px;
+  border:1px solid purple;
+}
+
+.footer__author{
+  /* прикрепить к нижней границе */
+  position:absolute;
+  bottom: 0;
+  margin: 18;
+  line-height: 25px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  color: #ffffff;
+  border:1px solid purple;
+}
+
+.footer__column_content_info{
+  float: right;
+  flex-direction: column;
+  border:1px solid red;
+}
+
+.footer__column-link{
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer__column-heading{
+  line-height: 30px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  margin: 0;
+  color: #ffffff;
+  border:1px solid purple;
+}
+
+.footer__column-links{
+  line-height: 30px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  margin: 20px 0 16px;
+  border:1px solid purple;
+}
+
+.footer__cosial-icon{
+  margin-right: 10px;
+  height: 16px;
+  width: 16px;
+  border:1px solid purple;
+}
+
+.footer__column_content_cosial{
+  flex-direction: column;
+  border:1px solid red;
+
+}
+
+
+
