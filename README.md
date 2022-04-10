@@ -3,7 +3,7 @@
 
 ссылка на проект https://olgasivyuk.github.io/how-to-learn/
 
-**Использованные технологии**  
+**Стек технологий**  
 - HTML  
 - CSS  
 
