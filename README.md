@@ -1,6 +1,6 @@
 # HOW TO LEARN
 
-A one-page landing about methods of effective learning.
+Student project based on brief of Yandex Practicum. A one-page landing about the principles of learning.
 
 **Tech stack**
 
